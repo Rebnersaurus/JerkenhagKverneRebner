@@ -22,7 +22,7 @@ The goal of the project is to create a dynamic calendar-based application that w
 - Any up to date web browser
 
 # Installation
-- Copi the files from the repository and download.
+- Copy the files from the repository and download.
 - Download either XAMPP (PC) or MAMP (mac)
 
 XAMPP instructions
