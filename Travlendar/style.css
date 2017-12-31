@@ -1,0 +1,377 @@
+body {
+    background-color: #eaeaea;
+    font-size: 120%;
+    margin: 0;
+    padding: 0;
+    overflow: none;
+}
+
+::-webkit-scrollbar {
+    width: .5em;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 10px solid slategrey;
+}
+
+header {
+    overflow: auto;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    border-bottom: solid black 1px;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 5px 10px #696969;
+}
+
+header h1 {
+    margin: 0;
+    padding: .2em;
+}
+
+#icmenu {
+    float: right;
+    right: 1em;
+    top: .2em;
+    bottom: 0;
+    height: 5%;
+    position: fixed;
+    display: inline-block;
+}
+
+#icmenu img {
+    padding: .5em;
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+img {
+    height: 100%;
+}
+
+input {
+    font-size: 1em;
+}
+
+input[type='number'] {
+    width: 200px;
+    padding-left: .2em;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+    transform:translate(0,.3em);
+}
+
+input[type='checkbox']:checked {
+    background: lime;
+}
+
+
+
+.miniBox {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+    margin: auto;
+    margin-top: 30vh;
+    width: 30vw;
+    overflow: auto;
+}
+
+.miniBox form {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    display: block;
+}
+
+.miniBox p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.miniBox input {
+    font-size: 1.3em;
+    padding: .1em;
+    width: 98%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.miniBox button {
+    font-size: 1.5em;
+    width: 100%;
+    padding: .2em;
+    margin: 2px;
+    margin-bottom: 10px;
+}
+
+#errormessage {
+    font-size: 1em;
+    color: red;
+}
+
+
+
+#eventlist {
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+    overflow: auto;
+}
+
+.day {
+    margin: 1em;
+}
+
+.day hr {
+    width: 80%;
+    height: 2px;
+    margin-left: 0;
+}
+
+.event {
+    margin: 0;
+    margin-top: 1em;
+    padding: 0;
+    width: 50%;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: #aeaeae;
+    box-shadow: 5px 5px 10px #696969;
+}
+
+.especs {
+    left: 0;
+    margin: 0;
+    padding: 1em;
+    width: 60%;
+    display: inline-block;
+}
+
+.eventTitle {
+    font-size: 1.5em;
+    font-weight: bold; 
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.label {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+}
+
+.label img {
+    width: 80%;
+}
+
+.label p {
+    margin: 0;
+    padding: 0;
+}
+
+.eNav {
+    margin: 0;
+    padding: 1em;
+    width: 25%;
+    display: inline-block;
+}
+
+.eNav a {
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+    margin-bottom: 1em;
+    width: 40%;
+    display: inline-block;
+}
+
+.eNav img {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#settings {
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+    overflow: auto;
+    margin-left: 1em;
+}
+
+.preference p {
+    display: inline-block;
+    width: 20vw;
+}
+
+.preference button {
+    display: inline-block;
+    height: 4em;
+    width: 8vw;
+    margin-left: 1em;
+}
+
+.distance p {
+    display: inline-block;
+}
+
+.distance input {
+    display: inline-block;
+}
+
+.mot {
+    display: block;
+    border-bottom: 1px solid black;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mot section {
+    display: inline-block;
+}
+
+.available {
+    display: block;
+}
+
+.mot p {
+    display: inline-block;
+    margin: .5em;
+}
+
+.motName {
+    display: block;
+    width: 15%;
+}
+
+.mot div {
+    display: inline-block;
+}
+
+.mot input {
+    display: inline-block;
+}
+
+.publicmot {
+    display: inline-block;
+}
+
+#breaks {
+    margin-bottom: 100px;
+}
+
+.break p {
+    display: inline-block;
+}
+
+.break input {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.break img {
+    width: 2em;
+    height: 2em;
+    margin-left: 1em;
+    transform: translate(0, .5em);
+}
+
+
+
+#eventForm {
+    position: relative;
+    top: 10vh;
+    height: 90vh;
+    overflow: auto;
+    margin-left: 1em;
+}
+
+#save{
+    background-color: lime;
+}
+
+#cancel{
+    background-color: red;
+}
+
+#generate{
+    height: 20px;
+    cursor: pointer;
+}
+
+.route {
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.route p {
+    display: inline-block;
+    margin: 20px;
+}
+
+#eventForm #buttons {
+    text-align: center;
+}
+
+#eventForm #buttons button {
+    color: white;
+    margin: 10px;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.journey {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: .5em;
+    background-color: #aeaeae;
+}
+
+.journey input {
+    display: inline-block;
+    cursor: pointer;
+    height: 2em;
+    width: 2em;
+    background-color: white;
+}
+
+.journey input:checked {
+    background-color: green;
+}
