@@ -1,0 +1,90 @@
+
+							
+\input{commandsFile}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+
+
+%TITLE PAGE
+
+\begin{titlepage}
+
+
+%LOGO
+
+{\begin{table}[t!]
+\centering
+\begin{tabu} to \textwidth { X[1.3,r,p] X[1.7,l,p] }
+\textcolor{Blue}
+{\textbf{\small{Travlendar+ project Jerkenhag, Kverne, Rebner}}} & \includegraphics[scale=0.5]{PolimiLogo}
+\end{tabu}
+\end{table}}~\\ [7cm]
+
+%TITLE
+
+\begin{flushleft}
+
+%Replace the text string with your title
+{\textcolor{Blue}{\textbf{\Huge{Acceptance Testing Document}}}} \\ [1cm]
+
+\end{flushleft}
+
+\end{titlepage}
+
+%Define deliverable specific info
+%Replace cell contents where needed
+\begin{table}[h!]
+\begin{tabu} to \textwidth { X[0.3,r,p] X[0.7,l,p] }
+\hline
+
+\textbf{Deliverable:} & Acceptance Testing Document\\
+\textbf{Title:} & Acceptance Testing Document \\
+\textbf{Authors:} & Jerkenhag, Kverne, Rebner \\
+\textbf{Version:} & 1.0 \\
+\textbf{Date:} & \today \\
+\textbf{Download page:} & \href{https://github.com/Rebnersaurus/JerkenhagKverneRebner}{https://github.com/Rebnersaurus/JerkenhagKverneRebner} \\
+\textbf{Copyright:} & Copyright © \the\year, Jerkenhag, Kverne, Rebner All rights reserved \\
+\hline
+\end{tabu}
+\end{table}
+
+\setcounter{page}{2}
+
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\addcontentsline{toc}{section}{Table of Contents}
+\tableofcontents
+\newpage
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Project Group Information}}}
+\label{sect:Project Group}
+\input{pp}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Installation}}}
+\label{sect:installation}
+\input{Installation}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Acceptance Test Cases}}}
+\label{sect:acceptance test cases}
+\input{AcceptanceTC}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Additional Comments}}}
+\label{sect:Additional Comments}
+\input{AdditionalComments}
+
+
+\end{document}
